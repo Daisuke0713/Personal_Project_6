@@ -35,7 +35,4 @@ void display(Value *list);
 // as the original list
 Value *reverse(Value *list);
 
-// Free all the memory anyhow referred to by the given list
-void cleanup(Value *list);
-
 #endif /* LINKEDLIST_H_ */

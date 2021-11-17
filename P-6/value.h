@@ -12,6 +12,7 @@ typedef enum {
 	STRING_TYPE,
 	CONS_TYPE,
 	NULL_TYPE,
+	POINTER_TYPE
 } valueType;
 
 struct Value {
@@ -20,6 +21,7 @@ struct Value {
 		int i;
 		double d;
 		char *s;
+		void *p;
 		struct ConsCell {
 			struct Value *car;
 			struct Value *cdr;
